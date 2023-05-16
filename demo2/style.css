@@ -1,0 +1,38 @@
+body {
+	font-family: sans-serif;
+	font-size: 16px;
+}
+
+article {
+	display: grid;
+	grid-template-columns: auto auto;
+	place-content: center;
+	gap: 20rem;
+}
+
+.result {
+	place-self: center right;
+}
+
+.input_pad {
+	place-self: center left;
+
+	width: 28rem;
+	height: 28rem;
+
+	display: grid;
+
+	grid-template-columns: repeat(28, 1fr);
+
+	border: 2px solid black;
+
+	user-select: none;
+}
+
+.input_pad div:hover {
+	background-color: gray;
+}
+
+.input_pad div.set {
+	background-color: black;
+}
